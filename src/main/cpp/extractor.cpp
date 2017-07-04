@@ -28,8 +28,8 @@ class ExtractorServiceImpl final : public ExtractorService::Service {
 		float quality = 9.7;
 		std::string indexStr = "IndexIndexIndex";
 		std::string exDataStr = inputFinger->data() + "ExtractedDataExtractedDataExtractedData";
-		const byte *index = indexStr.c_str();
-		const byte *exData = exDataStr.c_str();
+		const char *index = indexStr.c_str();
+		const char *exData = exDataStr.c_str();
 		
 		extractedFinger->set_quality(quality);
 		extractedFinger->set_index(index);
